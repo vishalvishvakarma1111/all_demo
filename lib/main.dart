@@ -1,4 +1,5 @@
- import 'package:flutter/material.dart';
+ import 'package:alll_demo/location.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,16 +13,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Background Location Service'),
         ),
-        body: Center(
-          child:  Text(
-            "Check",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ),
+        body: LocationView(),
       ),
     );
   }
